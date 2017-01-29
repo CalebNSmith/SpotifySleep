@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:title="Playlist URI">
+
+        <EditTextPreference
+            android:key="com.caleb.spotifysleep.playlist_key"
+            android:text="Playlist URI"
+            android:summary="Enter the playlist URI you wish to play from"/>
+
+        <EditTextPreference
+            android:key="com.caleb.spotifysleep.default_time_key"
+            android:text="Default Time"
+            android:summary="Enter the default time for the sleep timer" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

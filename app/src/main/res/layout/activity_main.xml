@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/background_material_dark">
+
+    <TextView android:id="@+id/songNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Play"/>
+
+    <Button android:id="@+id/prevSongButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prev"
+        android:layout_toLeftOf="@id/playButton"
+        android:layout_alignTop="@id/playButton"/>
+
+    <Button android:id="@+id/nextSongButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_toRightOf="@id/playButton"
+        android:layout_alignTop="@id/playButton"/>
+
+    <TextView android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/playButton"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF" />
+
+    <Button android:id="@+id/subtractTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_toLeftOf="@id/timeText"
+        android:layout_alignTop="@id/timeText"/>
+
+    <Button android:id="@+id/additionTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_toRightOf="@id/timeText"
+        android:layout_alignTop="@id/timeText"/>
+
+</RelativeLayout>
